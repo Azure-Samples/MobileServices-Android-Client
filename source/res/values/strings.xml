@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">MyMobileService</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_todo_list">TodoListActivity</string>
+    <string name="title_activity_todo_details">TodoDetailsActivity</string>
+
+</resources>
