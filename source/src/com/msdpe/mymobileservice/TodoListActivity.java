@@ -26,6 +26,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -136,6 +137,23 @@ ServiceResultReceiver.Receiver {
 			setListAdapter(adapter);
 		} catch (Exception ex) {
 			Log.e("TodoListActivity", ex.getMessage());
+		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case (R.id.menu_add_todo):
+			Intent todoDetailsIntent = new Intent(getApplicationContext(),
+					TodoDetailsActivity.class);
+			todoDetailsIntent.putExtra("AddingNewTodo", true);
+			startActivityForResult(todoDetailsIntent, 1);
+			return true;
+		case (R.id.menu_refresh):
+			startTodoFetchService();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
 		}
 	}
 }
