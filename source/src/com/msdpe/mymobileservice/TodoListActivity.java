@@ -63,6 +63,7 @@ ServiceResultReceiver.Receiver {
 						if (todoItem.getString("text").equals(
 								tv.getText().toString())) {
 							todoDetailsIntent.putExtra("TodoId", todoItem.getInt("id"));
+							todoDetailsIntent.putExtra("image", todoItem.getString("coltest"));
 						}
 					}
 				} catch (Exception ex) {

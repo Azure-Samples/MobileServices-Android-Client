@@ -29,10 +29,23 @@
         android:layout_below="@+id/txtTodoText"
         android:text="Save ToDo" />
     <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSaveTodo"
+        android:text="Pick Image" />
+    <Button
         android:id="@+id/btnMarkTodoComplete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/txtTodoText"
         android:text="Mark ToDo Complete" />
+    <ImageView 
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
