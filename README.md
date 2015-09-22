@@ -1,3 +1,9 @@
+---
+services:
+platforms:
+author: azure
+---
+
 # Mobile Services - The Android Client
 This is an Android application which demonstrates how to connect to [Windows Azure Mobile Services](https://www.windowsazure.com/en-us/develop/mobile/).  The client has a dependency on setting up a Mobile Service in the Windows Azure portal.  The application allows users to view a list of todo items, mark them as complete, and add new ones.  This sample was built using Eclipse and the Android SDK.
 
